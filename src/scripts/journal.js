@@ -1,11 +1,11 @@
 export const JournalAsHTML = (journalObj) => {
   return `
         <section class="journal">
-            <div class="id">${journal.id}</div>
-            <div class="date">${journal.date}</div>
-            <div class="concept">${journal.concept}</div>
-            <div class="entry">${journal.entry}</div>
-            <div class="mood">${journal.mood}</div>
+            <div class="id">${journalObj.id}</div>
+            <div class="date">${journalObj.date}</div>
+            <div class="concept">${journalObj.concept}</div>
+            <div class="entry">${journalObj.entry}</div>
+            <div class="mood">${journalObj.mood}</div>
         </section>
     `
 }
