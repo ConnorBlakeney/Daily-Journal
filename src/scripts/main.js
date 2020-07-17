@@ -1,3 +1,3 @@
-import { JournalList } from "./journalList"
+import { JournalList } from "./journalList.js"
 
 JournalList()
