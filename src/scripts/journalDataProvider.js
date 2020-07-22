@@ -34,6 +34,14 @@ const journal = [
       "We dove into javascript and began by learning the process of automating HTML data structures by completing Martin's Aquarium, Modern Farm, Daily Journal, and Dotard and Simbleton.",
     mood: "Ok",
   },
+  {
+    id: 4,
+    date: "07/22/2020",
+    concept: "Group Project 2, Automated Country Websites",
+    entry:
+      "Working with the same group as last time (the Hobbits) we used the skills gained in Book 1 to refactor our website and automate the HTML, as well as several quality of life changes.",
+    mood: "Clap along with Pharrell",
+  },
 ]
 
 /*

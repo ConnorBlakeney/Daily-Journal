@@ -5,7 +5,8 @@ export const JournalAsHTML = (journalObj) => {
             <div class="date">${journalObj.date}</div>
             <div class="concept">${journalObj.concept}</div>
             <div class="entry">${journalObj.entry}</div>
-            <div class="mood">${journalObj.mood}</div>
+            <div class="mood">Mood: ${journalObj.mood}</div>
         </section>
+        <hr>
     `
 }
