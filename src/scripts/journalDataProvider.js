@@ -42,6 +42,22 @@ const journal = [
       "Working with the same group as last time (the Hobbits) we used the skills gained in Book 1 to refactor our website and automate the HTML, as well as several quality of life changes.",
     mood: "Clap along with Pharrell",
   },
+  {
+    id: 5,
+    date: "07/23/2020",
+    concept: "APIs and Promises",
+    entry:
+      "Steve and Kristen covered the theory and practice of using APIs and fetch requests.",
+    mood: "OK",
+  },
+  {
+    id: 6,
+    date: "07/24/2020",
+    concept: "Lab Day",
+    entry:
+      "Reviewed concecpts taught yesterday, finished up loose-end assignments, and began to work on Truncheons and Flagons optional group project.",
+    mood: "OK",
+  },
 ]
 
 /*
