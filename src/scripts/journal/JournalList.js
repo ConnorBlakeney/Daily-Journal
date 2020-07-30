@@ -1,5 +1,5 @@
-import { slicedJournal } from "./journalDataProvider.js"
-import { JournalAsHTML } from "./journal.js"
+import {slicedJournal} from "./JournalDataProvider.js"
+import {JournalAsHTML} from "./Journal.js"
 
 export const JournalList = () => {
   const journalArray = slicedJournal()
