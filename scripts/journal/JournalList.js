@@ -1,16 +1,24 @@
-import {slicedJournal} from "./JournalDataProvider.js"
+import {getEntries, useJournalEntries} from "./JournalDataProvider.js"
 import {JournalAsHTML} from "./Journal.js"
-import {useJournalEntries} from "./JournalDataProvider.js"
+
+const contentTarget = document.querySelector(".entryLog")
+const eventHub = document.querySelector(".container")
+
+eventHub.addEventListener("entryStateChanged", () => {
+  const allEntries = useJournalEntries()
+  render(allEntries)
+})
 
 export const JournalList = () => {
-  const journalArray = slicedJournal()
-  const contentTarget = document.querySelector(".entryLog")
+  getEntries().then(render(useJournalEntries))
+}
 
-  let JournalHTMLRepresentations = ""
-
-  for (const journal of journalArray) {
-    JournalHTMLRepresentations += JournalAsHTML(journal)
-  }
+const render = (entryArray) => {
+  entryArray
+    .map((currentEntry) => {
+      return JournalAsHTML(currentEntry)
+    })
+    .join("")
 
   contentTarget.innerHTML += `
         <article class="journalList">
