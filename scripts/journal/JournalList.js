@@ -1,7 +1,7 @@
 import {getEntries, useJournalEntries} from "./JournalDataProvider.js"
 import {JournalAsHTML} from "./Journal.js"
 
-const contentTarget = document.querySelector(".entryLog")
+const contentTarget = document.querySelector("#entryLog")
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("entryStateChanged", () => {
@@ -10,19 +10,14 @@ eventHub.addEventListener("entryStateChanged", () => {
 })
 
 export const JournalList = () => {
-  getEntries().then(render(useJournalEntries))
-}
+  // get the entries
+  getEntries().then(() => {
+    const journalEntries = useJournalEntries()
 
-const render = (entryArray) => {
-  entryArray
-    .map((currentEntry) => {
-      return JournalAsHTML(currentEntry)
-    })
-    .join("")
+    // convert the entry object to html
+    let JournalHTML = journalEntries.map((entry) => JournalAsHTML(entry))
 
-  contentTarget.innerHTML += `
-        <article class="journalList">
-            ${JournalHTMLRepresentations}
-        </article>
-  `
+    // modify the dom for every entry in the html
+    JournalHTML.forEach((entry) => (contentTarget.innerHTML += entry))
+  })
 }
