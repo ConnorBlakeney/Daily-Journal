@@ -1,5 +1,5 @@
 import {saveJournalEntry} from "./JournalDataProvider.js"
-import {journalList} from "./JournalEntryList.js"
+import {journalList} from "./JournalEntryList.js.js"
 
 const journalForm = document.querySelector(".journalForm")
 const eventHub = document.querySelector(".container")
