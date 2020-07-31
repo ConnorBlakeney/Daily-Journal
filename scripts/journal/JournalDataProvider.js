@@ -36,3 +36,11 @@ export const useJournalEntries = () => {
 }
 
 export const slicedJournal = () => journalEntries.slice()
+
+export const getEntries = () => {
+  return fetch("http://localhost:3000/journal")
+    .then((response) => response.json())
+    .then((retrievedEntries) => {
+      journalEntries = retrievedEntries
+    })
+}

@@ -1,5 +1,5 @@
 import {saveJournalEntry} from "./JournalDataProvider.js"
-import {journalList} from "./JournalEntryList.js.js"
+import {JournalList} from "./JournalList.js"
 
 const journalForm = document.querySelector(".journalForm")
 const eventHub = document.querySelector(".container")
@@ -18,7 +18,7 @@ eventHub.addEventListener("click", (clickEvent) => {
     }
 
     saveJournalEntry(newNote)
-    journalList()
+    JournalList()
   }
 })
 
