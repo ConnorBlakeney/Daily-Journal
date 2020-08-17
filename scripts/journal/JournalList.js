@@ -4,20 +4,18 @@ import {JournalAsHTML} from "./Journal.js"
 const contentTarget = document.querySelector("#entryLog")
 const eventHub = document.querySelector(".container")
 
-eventHub.addEventListener("entryStateChanged", () => {
-  const allEntries = useJournalEntries()
-  render(allEntries)
-})
+// eventHub.addEventListener("journalStateChanged", () => {
+//     const allEntries = useJournalEntries
+//     render(allEntries)
+// })
+
+ const render = (entries) => {
+  // get the entries
+  contentTarget.innerHTML = entries.map(entry => JournalAsHTML(entry)).join("")
+}
 
 export const JournalList = () => {
-  // get the entries
-  getEntries().then(() => {
-    const journalEntries = useJournalEntries()
-
-    // convert the entry object to html
-    let JournalHTML = journalEntries.map((entry) => JournalAsHTML(entry))
-
-    // modify the dom for every entry in the html
-    JournalHTML.forEach((entry) => (contentTarget.innerHTML += entry))
-  })
+    getEntries()
+        .then(useJournalEntries)
+        .then(render)
 }

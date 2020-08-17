@@ -8,7 +8,7 @@ const dispatchStateChangeEvent = () => {
 
 export const saveJournalEntry = (newJournalEntry) => {
   // Use `fetch` with the POST method to add your entry to your API
-  fetch("http://localhost:3000/entries", {
+  fetch("http://localhost:8088/entries", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -28,7 +28,7 @@ export const useJournalEntries = () => {
 }
 
 export const getEntries = () => {
-  return fetch("http://localhost:3000/entries")
+  return fetch("http://localhost:8088/entries")
     .then((response) => response.json())
     .then((retrievedEntries) => {
       journalEntries = retrievedEntries

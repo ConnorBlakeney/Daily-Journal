@@ -7,7 +7,6 @@
       "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS. Followed up by learning to push everything to GitHub and how to operate Git from the command line.",
       "mood": "Ok"
     },
-
     {
       "id": 2,
       "date": "07/13/2020",
@@ -15,7 +14,6 @@
       "entry": "My group and I (Gib Jeffries, Mikayla Swinkels, Moncia Provence, and myself) used the tools taught to us the first week to make a travel brochure website, which can be found on Github.",
       "mood": "Ok"
     },
-
     {
       "id": 3,
       "date": "07/20/2020",
@@ -43,6 +41,20 @@
       "concept": "Lab Day",
       "entry": "Reviewed concecpts taught yesterday, finished up loose-end assignments, and began to work on Truncheons and Flagons optional group project.",
       "mood": "OK"
+    },
+    {
+      "entry": "Our Truncheons and Flagons group has almost finished the project. Our learning goals are to practice fetching and using information from a self-made API, creating and using custom events, and understanding the significance of data relationships and how to use that information.",
+      "concept": "Truncheons and Flagons",
+      "mood": "happy",
+      "date": 1597679281151,
+      "id": 7
+    },
+    {
+      "entry": "fewq",
+      "concept": "fewq",
+      "mood": "happy",
+      "date": 1597682960783,
+      "id": 8
     }
   ]
 }
