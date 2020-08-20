@@ -1,8 +1,7 @@
-import {JournalList} from "./journal/JournalList.js"
-import {getEntries} from "./journal/JournalDataProvider.js"
-import { MoodForm } from "./journal/JournalForm.js"
+import "../scripts/journal/JournalList.js";
+import { JournalForm } from "./journal/JournalForm.js";
+import { ShowEntriesButton } from "./buttons/ShowButton.js";
 
-JournalList()
-getEntries()
-MoodForm()
+JournalForm()
+ShowEntriesButton()
 
