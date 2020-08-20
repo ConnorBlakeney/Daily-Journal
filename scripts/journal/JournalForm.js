@@ -1,6 +1,6 @@
 import {saveJournalEntry} from "./JournalDataProvider.js"
 import {JournalList} from "./JournalList.js"
-import { useMoods } from "../mood/MoodProvider.js"
+import { getMoods, useMoods } from "../mood/MoodProvider.js"
 
 const journalForm = document.querySelector(".journalForm")
 const eventHub = document.querySelector(".container")
@@ -23,7 +23,7 @@ eventHub.addEventListener("click", (clickEvent) => {
   }
 })
 
-export const JournalFormComponent = () => {
+export const render = () => {
     const allMoods = useMoods()
 
   journalForm.innerHTML += `
@@ -39,4 +39,13 @@ export const JournalFormComponent = () => {
         <button type="button" name="conceptsCovered" id="conceptsCovered">
         Record Journal Entry
     </button>`
+}
+
+export const MoodForm = () => {
+    getMoods()
+    .then( ()=> {
+        const moods = useMoods()
+        render(moods)
+        debugger
+    })
 }
