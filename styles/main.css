@@ -1,1 +1,23 @@
-@import "./button.css"
+@import "./button.css";
+@import "./mood.css";
+
+* {
+    box-sizing: border-box;
+}
+
+/* .inputWrapper {
+    padding: auto;
+    margin: auto;
+}
+
+.journalEntry {
+    margin: 2rem 0;
+} */
+
+.displayEntries {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 8px solid black;
+}

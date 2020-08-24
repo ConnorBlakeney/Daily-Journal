@@ -21,6 +21,18 @@ eventHub.addEventListener("editClicked", customEvent => {
     entryDate.value = entryObjToEdit.date
     id.value = parseInt(entryId)
     
+    const editedEntry = {
+        date: entryDate.value,
+        concept: entryConcept.value,
+        entry: entryContent.value,
+        moodId:entryMood.value,
+        id: parseInt(id.value)
+        }
+
+        editEntry(editedEntry)
+        id.value=""
+                
+    
 })
 
 eventHub.addEventListener("click", clickEvent => {
@@ -45,17 +57,7 @@ eventHub.addEventListener("click", clickEvent => {
                 }
 
                 saveEntry(newEntry)
-            } else {
-                    const editedEntry = {
-                        date: entryDate.value,
-                        concept: entryConcept.value,
-                        entry: entryContent.value,
-                        moodId:entryMood.value,
-                        id: parseInt(id.value)
-                    }
-                    editEntry(editedEntry)
-                    id.value=""
-                }
+            } 
                 } else {
                     window.alert("Please fill all fields")
                 }
@@ -84,9 +86,8 @@ const render = (moods) => {
             <textarea id="journalEntry"></textarea>
             </div>
         </fieldset>
-        <fieldset>
-            <div class="inputWrapper">
-            <label for="mood">Mood for the day</label>
+        <div class="inputWrapper">
+            <label for="mood"></label>
             <select name="mood" id="journalMood">
                 <option value="0">Select a mood...</option>
                 ${
@@ -96,9 +97,8 @@ const render = (moods) => {
                         }
                     ).join("")
                 }
-            </div>
+        </div>
             <input type="hidden" name="entryId" id="entryId">
-        </fieldset>
         <input class="button" type="submit" value="Submit" id="Submit">
        
     `
