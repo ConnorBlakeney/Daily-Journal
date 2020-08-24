@@ -13,9 +13,7 @@ eventHub.addEventListener("click", clickEvent => {
 // function to render shownotes button on initial page load
 export const ShowEntriesButton = () => {
     contentTarget.innerHTML = `
-    <div>
-    <button class="button" id="showEntries">Show Entries</button>
-    </div>
+    <button id="showEntries">Show Entries</button>
     `
 
 }
