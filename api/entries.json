@@ -1,0 +1,82 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "date": "07/12/2020",
+      "concept": "GitHub",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS. Followed up by learning to push everything to GitHub and how to operate Git from the command line.",
+      "moodId": 5
+    },
+    {
+      "id": 2,
+      "date": "07/14/2020",
+      "concept": "Group Project",
+      "entry": "My group and I (Gib Jeffries, Mikayla Swinkels, Moncia Provence, and myself) used the tools taught to us the first week to make a travel brochure website, which can be found on Github.",
+      "moodId": 4
+    },
+    {
+      "id": 3,
+      "date": "07/20/2020",
+      "concept": "Client Side Mastery Book 1",
+      "entry": "We dove into javascript and began by learning the process of automating HTML data structures by completing Martin's Aquarium, Modern Farm, Daily Journal, and Dotard and Simbleton.",
+      "moodId": 5
+    },
+    {
+      "date": "2020-07-22",
+      "concept": "Group Project 2",
+      "entry": "Working with the same group as last time (the Hobbits) we used the skills gained in Book 1 to refactor our website and automate the HTML, as well as several quality of life changes.",
+      "moodId": "1",
+      "id": 4
+    },
+    {
+      "date": "2020-07-23",
+      "concept": "APIs",
+      "entry": "Steve and Kristen covered the theory and practice of using APIs and fetch requests.",
+      "moodId": 1,
+      "id": 5
+    },
+    {
+      "date": "2020-07-24",
+      "concept": "Lab Day",
+      "entry": "Reviewed concecpts taught yesterday, finished up loose-end assignments, and began to work on Truncheons and Flagons optional group project.",
+      "moodId": "1",
+      "id": 6
+    },
+    {
+      "date": "2020-08-13",
+      "concept": "Truncheons and Flagons",
+      "entry": "Our Truncheons and Flagons group has almost finished the project. Our learning goals are to practice fetching and using information from a self-made API, creating and using custom events, and understanding the significance of data relationships and how to use that information.",
+      "moodId": "4",
+      "id": 7
+    },
+    {
+      "date": "2020-08-21",
+      "concept": "Daily Journal",
+      "entry": "Finally got daily journal up and running. need to style",
+      "moodId": 1,
+      "id": 8
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Clap along with Pharrell"
+    },
+    {
+      "id": 2,
+      "label": "Ok"
+    },
+    {
+      "id": 3,
+      "label": "Unimpressed"
+    },
+    {
+      "id": 4,
+      "label": "Crying Jordan"
+    },
+    {
+      "id": 5,
+      "label": "alert"
+    }
+  ]
+}
