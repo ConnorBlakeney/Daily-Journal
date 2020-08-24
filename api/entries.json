@@ -52,8 +52,8 @@
     {
       "date": "2020-08-21",
       "concept": "Daily Journal",
-      "entry": "Finally got daily journal up and running. need to style",
-      "moodId": 1,
+      "entry": "Finally got daily journal up and running. need to style still",
+      "moodId": "1",
       "id": 8
     }
   ],

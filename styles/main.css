@@ -1,4 +1,1 @@
-.id {
-  margin: 2rem;
-  font-size: 2rem;
-}
+@import "./button.css"
